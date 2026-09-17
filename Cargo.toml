@@ -31,7 +31,7 @@ readme = "README.md"
 [workspace.dependencies]
 nickel-lang-core = { version = "0.19.0", path = "./core", default-features = false }
 nickel-lang-flock = { version = "0.1.0", path = "./flock" }
-nickel-lang-git = { version = "0.2.1", path = "./git" }
+nickel-lang-git = { version = "0.3.0", path = "./git" }
 nickel-lang-package = { version = "0.8.0", path = "./package" }
 nickel-lang-parser = { version = "0.4.0", path = "./parser" }
 nickel-lang-vector = { version = "0.2.0", path = "./vector" }
