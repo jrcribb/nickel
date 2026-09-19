@@ -1,3 +1,27 @@
+Version 1.18 (2026-09-19)
+=========================
+
+Maintenance release. Nickel 1.18 adds a couple of new array functions to the
+standard library (`std.array.group` and `std.array.chunk`). The most notable
+change is that `std.array.sort` is now **much, much faster** (or put
+differently, it was awfully slow before the fix) and stable. It also fixes a
+handful of bugs in the parser and the standard library.
+
+Core language
+-------------
+
+* Fix parsing failure when using negative number literals in match patterns by @L0r3m1p5um in https://github.com/nickel-lang/nickel/pull/2632
+
+Stdlib
+------
+
+* Add `std.array.group` by @mboes in https://github.com/nickel-lang/nickel/pull/2638
+* Add `std.array.chunk` by @mboes in https://github.com/nickel-lang/nickel/pull/2639
+* Make `std.array.sort` faster and stable by using merge sort by @L0r3m1p5um in https://github.com/nickel-lang/nickel/pull/2643
+* Fix `std.number.floor` and `std.array.range_step` by @L0r3m1p5um in https://github.com/nickel-lang/nickel/pull/2648
+* Avoid panic in `std.string.find` on a match at the end of the string by @SAY-5 in https://github.com/nickel-lang/nickel/pull/2628
+* Fix documentation reference in `std.string.substring` by @ldesgoui in https://github.com/nickel-lang/nickel/pull/2652
+
 Version 1.17 (2026-06-03)
 =========================
 
